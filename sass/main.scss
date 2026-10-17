@@ -1,0 +1,6 @@
+@use "colors";
+
+body {
+  background: colors.$bg;
+  color: colors.$text;
+}
