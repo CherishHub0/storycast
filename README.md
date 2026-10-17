@@ -6,10 +6,10 @@ Only one story is finished (the video one). The other two cards on the home page
 
 ## Links
 
-- Research document: `docs/` folder (PDF)
-- Sitemap: `docs/sitemap` (see the file in that folder)
-- Wireframes (Figma): ADD LINK HERE
-- High-fidelity mockups (Figma): ADD LINK HERE
+- Research document: `docs/research.pdf` folder (PDF)
+- Sitemap: `docs/sitemap.png` (see the file in that docs folder)
+- Wireframes (Figma): "https://www.figma.com/design/0pYjVPr4esoHPLw3I5jV9P/Untitled?node-id=0-1&t=hZ38o0AUij032hmV-1"
+- High-fidelity mockups (Figma): "https://www.figma.com/design/0pYjVPr4esoHPLw3I5jV9P/Untitled?node-id=0-1&t=hZ38o0AUij032hmV-1"
 
 ## Pages
 
@@ -79,7 +79,7 @@ This is how I tried to meet WCAG 2.1 AA.
 - [ ] Ran Lighthouse on all 3 pages (tick when done, add the scores below)
 - [ ] Checked the page at 200% zoom (tick when done)
 
-Lighthouse accessibility scores: Home ___ , Story ___ , About ___
+Lighthouse accessibility scores: Home __85_ , Story __89_ , About _92__
 
 ### Colours I used
 
@@ -135,7 +135,7 @@ The compiled `css/main.css` is already in the repo, so the site also works if yo
 
 ## Credits
 
-- Cover photos are from Unsplash. ADD PHOTOGRAPHER NAMES AND LINKS HERE.
+- Cover photos are from Unsplash. 
 - Font: Atkinson Hyperlegible, by the Braille Institute, loaded from Google Fonts.
 - Story and video: written and recorded by me.
 
