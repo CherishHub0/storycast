@@ -1,6 +1,163 @@
 @use "colors";
+@use "typography" as type;
+@use "spacing" as sp;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  margin: 0;
   background: colors.$bg;
   color: colors.$text;
+  font-family: type.$font;
+  font-size: type.$size-base;
+  line-height: type.$line;
+}
+
+a {
+  color: colors.$accent;
+}
+
+// focus outline so keyboard users can see where they are
+:focus-visible {
+  outline: 3px solid colors.$accent;
+  outline-offset: 3px;
+}
+
+// skip link: hidden until you press Tab
+.skip {
+  position: absolute;
+  left: sp.$space-m;
+  top: -5rem;
+  background: colors.$accent;
+  color: colors.$bg;
+  padding: sp.$space-s sp.$space-m;
+  font-weight: bold;
+}
+.skip:focus {
+  top: sp.$space-m;
+}
+
+// header and nav
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: sp.$space-m;
+  max-width: sp.$page-width;
+  margin: 0 auto;
+  padding: sp.$space-m;
+}
+
+.logo {
+  font-size: type.$size-med;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: sp.$space-l;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: colors.$text;
+  padding: sp.$space-s 0;
+}
+
+.nav-list a[aria-current="page"] {
+  color: colors.$accent;
+  font-weight: bold;
+}
+
+// main area
+main {
+  max-width: sp.$page-width;
+  margin: 0 auto;
+  padding: sp.$space-m;
+}
+
+.hero {
+  padding: sp.$space-xl 0;
+  max-width: 40rem;
+}
+
+h1 {
+  font-size: type.$size-big;
+  line-height: 1.2;
+  margin: 0 0 sp.$space-m;
+}
+
+h2 {
+  font-size: type.$size-med;
+}
+
+.button {
+  display: inline-block;
+  background: colors.$accent;
+  color: colors.$bg;
+  font-weight: bold;
+  text-decoration: none;
+  padding: sp.$space-m sp.$space-l;
+  border-radius: 0.5rem;
+}
+
+// the cards, laid out with grid
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: sp.$space-l;
+}
+
+// the container query: the box is the container
+.card-box {
+  container-type: inline-size;
+}
+
+.card {
+  background: colors.$card;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.thumb {
+  height: 9rem;
+  background: colors.$muted;
+}
+
+.card-text {
+  padding: sp.$space-m;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.meta {
+  color: colors.$muted;
+  font-size: 0.95rem;
+}
+
+// when the box is wide enough, the picture goes beside the text
+@container (min-width: 28rem) {
+  .card {
+    display: flex;
+  }
+  .thumb {
+    width: 10rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+
+.site-footer {
+  max-width: sp.$page-width;
+  margin: 0 auto;
+  padding: sp.$space-l sp.$space-m;
+  border-top: 1px solid colors.$card;
 }

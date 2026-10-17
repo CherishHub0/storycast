@@ -1,1 +1,154 @@
-body{background:#0b1f3a;color:#f5f1e8}/*# sourceMappingURL=main.css.map */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b1f3a;
+  color: #f5f1e8;
+  font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+a {
+  color: #ffb547;
+}
+
+:focus-visible {
+  outline: 3px solid #ffb547;
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  background: #ffb547;
+  color: #0b1f3a;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.skip:focus {
+  top: 1rem;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #f5f1e8;
+  padding: 0.5rem 0;
+}
+
+.nav-list a[aria-current=page] {
+  color: #ffb547;
+  font-weight: bold;
+}
+
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  padding: 4rem 0;
+  max-width: 40rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+.button {
+  display: inline-block;
+  background: #ffb547;
+  color: #0b1f3a;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.card-box {
+  container-type: inline-size;
+}
+
+.card {
+  background: #16315a;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.thumb {
+  height: 9rem;
+  background: #c9d3e3;
+}
+
+.card-text {
+  padding: 1rem;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.meta {
+  color: #c9d3e3;
+  font-size: 0.95rem;
+}
+
+@container (min-width: 28rem) {
+  .card {
+    display: flex;
+  }
+  .thumb {
+    width: 10rem;
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+.site-footer {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border-top: 1px solid #16315a;
+}
+
+/*# sourceMappingURL=main.css.map */
