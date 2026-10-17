@@ -6,7 +6,7 @@ Only one story is finished (the video one). The other two cards on the home page
 
 ## Links
 
-- Research document: `docs/research.pdf` folder (PDF)
+- Research document: `docs/research.pdf` (see the file in that docs folder)
 - Sitemap: `docs/sitemap.png` (see the file in that docs folder)
 - Wireframes (Figma): "https://www.figma.com/design/0pYjVPr4esoHPLw3I5jV9P/Untitled?node-id=0-1&t=hZ38o0AUij032hmV-1"
 - High-fidelity mockups (Figma): "https://www.figma.com/design/0pYjVPr4esoHPLw3I5jV9P/Untitled?node-id=0-1&t=hZ38o0AUij032hmV-1"
