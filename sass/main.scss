@@ -161,3 +161,76 @@ h2 {
   padding: sp.$space-l sp.$space-m;
   border-top: 1px solid colors.$card;
 }
+
+// story page
+.story-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: sp.$space-xl;
+  }
+  
+  @media (min-width: 60rem) {
+    .story-layout {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    background: black;
+    border-radius: 0.5rem;
+  }
+  
+  figure {
+    margin: sp.$space-l 0;
+  }
+  
+  figcaption {
+    color: colors.$muted;
+    font-size: 0.95rem;
+    margin-top: sp.$space-s;
+  }
+  
+  .transcript {
+    background: colors.$card;
+    padding: sp.$space-l;
+    border-radius: 0.75rem;
+  }
+  
+  .toggle {
+    background: transparent;
+    color: colors.$accent;
+    border: 2px solid colors.$accent;
+    border-radius: 0.5rem;
+    padding: sp.$space-s sp.$space-m;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .related .card-box {
+    margin-bottom: sp.$space-l;
+  }
+
+  // about page
+.about-block {
+    max-width: 45rem;
+    margin-bottom: sp.$space-xl;
+  }
+  
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: sp.$space-m;
+    max-width: sp.$page-width;
+  }
+  
+  .feature-list li {
+    background: colors.$card;
+    padding: sp.$space-m;
+    border-radius: 0.75rem;
+  }
