@@ -1,0 +1,48 @@
+@use "colors" as c;
+@use "typography" as t;
+@use "spacing" as s;
+
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background: c.$bg;
+    color: c.$text;
+    font-family: t.$font;
+    font-size: t.$size-base;
+    line-height: t.$line;
+  }
+
+  h1 {
+    font-size: t.$size-big;
+    line-height: 1.2;
+    margin: 0 0 s.$space-m;
+  }
+
+  h2 {
+    font-size: t.$size-med;
+  }
+
+  a {
+    color: c.$accent;
+  }
+
+  // so keyboard users can always see where they are
+  :focus-visible {
+    outline: 3px solid c.$accent;
+    outline-offset: 3px;
+  }
+}

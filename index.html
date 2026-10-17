@@ -10,20 +10,20 @@
 </head>
 <body>
 
-  <a class="skip" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <p class="logo">StoryCast</p>
-    <nav aria-label="Main">
-      <ul class="nav-list">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="story/story-1.html">Story</a></li>
-        <li><a href="about.html">About</a></li>
+    <p class="site-header__logo">StoryCast</p>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--current" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="story/story-1.html">Story</a></li>
+        <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
+  <main class="page" id="main">
 
     <section class="hero">
       <h1>Stories you can see, hear and read</h1>
@@ -32,51 +32,51 @@
     </section>
 
     <section class="featured" aria-labelledby="featured-title">
-      <h2 id="featured-title">Featured stories</h2>
+      <h2 class="featured__title" id="featured-title">Featured stories</h2>
 
-      <div class="card-list">
+      <div class="featured__list">
 
         <div class="card-box">
           <article class="card">
-            <img class="thumb" src="assets/images/cover-1.jpg" alt="">
-            <div class="card-text">
-              <h3>The Day the Power Went Out</h3>
-              <p>A student, a dead laptop and a neighbour with a candle.</p>
-              <p class="meta">Video &middot; Captions &middot; Transcript</p>
-              <a href="story/story-1.html">Open this story</a>
+            <img class="card__image" src="assets/images/cover-1.jpg" alt="">
+            <div class="card__body">
+              <h3 class="card__title">The Day the Power Went Out</h3>
+              <p class="card__text">A student, a dead laptop and a neighbour with a candle.</p>
+              <p class="card__meta">Video &middot; Captions &middot; Transcript</p>
+              <a class="card__link" href="story/story-1.html">Open this story</a>
             </div>
           </article>
         </div>
-      
+
         <div class="card-box">
           <article class="card">
-            <img class="thumb" src="assets/images/cover-2.jpg" alt="">
-            <div class="card-text">
-              <h3>Voices of the Market</h3>
-              <p>An audio walk through a busy market, told through the people who work there.</p>
-              <p class="meta">Audio &middot; Coming soon</p>
+            <img class="card__image" src="assets/images/cover-2.jpg" alt="">
+            <div class="card__body">
+              <h3 class="card__title">Voices of the Market</h3>
+              <p class="card__text">An audio walk through a busy market, told through the people who work there.</p>
+              <p class="card__meta">Audio &middot; Coming soon</p>
             </div>
           </article>
         </div>
-      
+
         <div class="card-box">
           <article class="card">
-            <img class="thumb" src="assets/images/cover-3.jpg" alt="">
-            <div class="card-text">
-              <h3>Learning to Sign</h3>
-              <p>A short film about a family learning sign language together.</p>
-              <p class="meta">Video &middot; Coming soon</p>
+            <img class="card__image" src="assets/images/cover-3.jpg" alt="">
+            <div class="card__body">
+              <h3 class="card__title">Learning to Sign</h3>
+              <p class="card__text">A short film about a family learning sign language together.</p>
+              <p class="card__meta">Video &middot; Coming soon</p>
             </div>
           </article>
         </div>
-      
+
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <p>StoryCast is a student project. <a href="about.html">Read about our accessibility features</a>.</p>
+    <p class="site-footer__text">StoryCast is a student project. <a href="about.html">Read about our accessibility features</a>.</p>
   </footer>
 
 </body>

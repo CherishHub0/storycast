@@ -1,0 +1,80 @@
+@use "spacing" as s;
+
+@layer layout {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: s.$space-m;
+    max-width: s.$page-width;
+    margin: 0 auto;
+    padding: s.$space-m;
+  }
+
+  .page {
+    max-width: s.$page-width;
+    margin: 0 auto;
+    padding: s.$space-m;
+  }
+
+  // home page: the featured cards sit in a grid
+  .featured__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: s.$space-l;
+  }
+
+  // story page: video on the left, related stories on the right
+  .story-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: s.$space-xl;
+  }
+
+  @media (min-width: 60rem) {
+    .story-layout {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  // related cards are stacked with space between them
+  .related {
+    display: flex;
+    flex-direction: column;
+    gap: s.$space-l;
+  }
+
+  // about page: accessibility features in a grid
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: s.$space-m;
+    list-style: none;
+    padding: 0;
+  }
+
+  .site-footer {
+    max-width: s.$page-width;
+    margin: 0 auto;
+    padding: s.$space-l s.$space-m;
+  }
+}
+
+@layer layout {
+    // keep the right column from stretching to match the video column
+    .story-layout {
+      align-items: start;
+    }
+  
+    @media (min-width: 60rem) {
+      .story-layout {
+        grid-template-columns: minmax(0, 2fr) minmax(16rem, 1fr);
+      }
+    }
+  
+    // stop the related cards getting huge on tablets
+    .related {
+      max-width: 40rem;
+    }
+  }

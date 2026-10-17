@@ -10,49 +10,49 @@
 </head>
 <body>
 
-  <a class="skip" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <p class="logo">StoryCast</p>
-    <nav aria-label="Main">
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="story/story-1.html">Story</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
+    <p class="site-header__logo">StoryCast</p>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="story/story-1.html">Story</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--current" href="about.html" aria-current="page">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
+  <main class="page" id="main">
 
     <section class="hero">
       <h1>About StoryCast</h1>
       <p>StoryCast shares short audio and video stories so that everyone gets the same experience, whether they can hear them or not.</p>
     </section>
 
-    <section class="about-block" aria-labelledby="mission-title">
+    <section class="about__block" aria-labelledby="mission-title">
       <h2 id="mission-title">Our mission</h2>
       <p>Too many videos and recordings only work if you can hear them. We think a story should work for everyone. So every story on StoryCast comes with captions and a full written transcript, right on the same page.</p>
       <p>StoryCast is a student project. It is built mainly for deaf and hard-of-hearing people, and it also helps anyone watching with the sound off, on a noisy bus, or in a second language.</p>
     </section>
 
-    <section class="about-block" aria-labelledby="access-title">
+    <section class="about__block" aria-labelledby="access-title">
       <h2 id="access-title">Accessibility features</h2>
       <p>The site is built to meet WCAG 2.1 level AA. Here is what that means in practice:</p>
-      <ul class="feature-list">
-        <li><strong>Captions.</strong> Every video has a captions file you can switch on in the player.</li>
-        <li><strong>Transcripts.</strong> A full written version of every story sits under the player. You can hide or show it.</li>
-        <li><strong>Keyboard friendly.</strong> Every link and button can be reached with the Tab key.</li>
-        <li><strong>Skip link.</strong> Press Tab once on any page to jump straight to the main content.</li>
-        <li><strong>Clear focus.</strong> A thick amber outline shows where you are on the page.</li>
-        <li><strong>Strong contrast.</strong> All text colours have a contrast ratio of at least 7:1 against their background.</li>
-        <li><strong>Readable font.</strong> We use Atkinson Hyperlegible, a font designed to be easy to tell letters apart.</li>
-        <li><strong>Works when zoomed.</strong> The layout adjusts to small screens and larger text.</li>
-        <li><strong>No surprises.</strong> Nothing plays by itself.</li>
+      <ul class="features">
+        <li class="features__item"><strong>Captions.</strong> Every video has a captions file you can switch on in the player.</li>
+        <li class="features__item"><strong>Transcripts.</strong> A full written version of every story sits under the player. You can hide or show it.</li>
+        <li class="features__item"><strong>Keyboard friendly.</strong> Every link and button can be reached with the Tab key.</li>
+        <li class="features__item"><strong>Skip link.</strong> Press Tab once on any page to jump straight to the main content.</li>
+        <li class="features__item"><strong>Clear focus.</strong> A thick amber outline shows where you are on the page.</li>
+        <li class="features__item"><strong>Strong contrast.</strong> All text colours have a contrast ratio of at least 7:1 against their background.</li>
+        <li class="features__item"><strong>Readable font.</strong> We use Atkinson Hyperlegible, a font designed to be easy to tell letters apart.</li>
+        <li class="features__item"><strong>Works when zoomed.</strong> The layout adjusts to small screens and larger text.</li>
+        <li class="features__item"><strong>No surprises.</strong> Nothing plays by itself.</li>
       </ul>
     </section>
 
-    <section class="about-block" aria-labelledby="engage-title">
+    <section class="about__block" aria-labelledby="engage-title">
       <h2 id="engage-title">How to use StoryCast</h2>
       <ol>
         <li>Go to the <a href="index.html">Home page</a> and pick a story.</li>
@@ -66,7 +66,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>StoryCast is a student project. <a href="index.html">Back to the Home page</a>.</p>
+    <p class="site-footer__text">StoryCast is a student project. <a href="index.html">Back to the Home page</a>.</p>
   </footer>
 
 </body>

@@ -10,74 +10,74 @@
 </head>
 <body>
 
-  <a class="skip" href="#main">Skip to main content</a>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <p class="logo">StoryCast</p>
-    <nav aria-label="Main">
-      <ul class="nav-list">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="story-1.html" aria-current="page">Story</a></li>
-        <li><a href="../about.html">About</a></li>
+    <p class="site-header__logo">StoryCast</p>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="../index.html">Home</a></li>
+        <li class="nav__item"><a class="nav__link nav__link--current" href="story-1.html" aria-current="page">Story</a></li>
+        <li class="nav__item"><a class="nav__link" href="../about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main">
+  <main class="page" id="main">
     <div class="story-layout">
 
       <article class="story">
-        <h1>The Day the Power Went Out</h1>
-        <p class="meta">Video &middot; 30 seconds &middot; Captions and transcript included</p>
+        <h1 class="story__title">The Day the Power Went Out</h1>
+        <p class="story__meta">Video &middot; 30 seconds &middot; Captions and transcript included</p>
 
-        <figure>
-          <video controls preload="metadata" width="640" poster="../assets/images/cover-1.jpg">
+        <figure class="story__figure">
+          <video class="story__video" controls preload="metadata" width="640" poster="../assets/images/cover-1.jpg">
             <source src="../assets/media/story-1.mp4" type="video/mp4">
             <track kind="captions" src="../assets/transcripts/story-1.vtt" srclang="en" label="English" default>
             <p>Your browser cannot play this video. Read the transcript below instead.</p>
           </video>
-          <figcaption>
-            A student sits in a dim room and tells a story straight to the camera.
+          <figcaption class="story__caption">
+            Cherish tells a story straight to the camera.
           </figcaption>
         </figure>
 
         <section class="transcript" aria-labelledby="transcript-title">
-          <h2 id="transcript-title">Transcript</h2>
-          <button class="toggle" type="button" aria-expanded="true" aria-controls="transcript-text">
+          <h2 class="transcript__title" id="transcript-title">Transcript</h2>
+          <button class="transcript__toggle" type="button" aria-expanded="true" aria-controls="transcript-text">
             Hide transcript
           </button>
-          <div id="transcript-text">
-            <p>So last month, the night before a big deadline, the power just went out.</p>
-            <p>Not a flicker. The whole street, completely dark.</p>
+          <div class="transcript__text" id="transcript-text">
+            <p>So last month, the night before a big deadline I had, the power just went off.</p>
+            <p>The whole street, was completely dark.</p>
             <p>My laptop was on nine percent and I hadn't saved anything. Nothing.</p>
             <p>I sat there like, okay, that's it, I'm done.</p>
             <p>Then my neighbour knocked with a candle and a power bank.</p>
-            <p>I finished at two in the morning. We barely even talked. I still owe her a samosa.</p>
+            <p>I finished at two in the morning. We barely even talked. I still owe her a piece of cake till today.</p>
           </div>
         </section>
       </article>
 
       <aside class="related" aria-labelledby="related-title">
-        <h2 id="related-title">Related stories</h2>
+        <h2 class="related__title" id="related-title">Related stories</h2>
 
         <div class="card-box">
           <article class="card">
-            <img class="thumb" src="../assets/images/cover-2.jpg" alt="">
-            <div class="card-text">
-              <h3>Voices of the Market</h3>
-              <p>An audio walk through a busy market.</p>
-              <p class="meta">Audio &middot; Coming soon</p>
+            <img class="card__image" src="../assets/images/cover-2.jpg" alt="">
+            <div class="card__body">
+              <h3 class="card__title">Voices of the Market</h3>
+              <p class="card__text">An audio walk through a busy market.</p>
+              <p class="card__meta">Audio &middot; Coming soon</p>
             </div>
           </article>
         </div>
 
         <div class="card-box">
           <article class="card">
-            <img class="thumb" src="../assets/images/cover-3.jpg" alt="">
-            <div class="card-text">
-              <h3>Learning to Sign</h3>
-              <p>A family learns sign language together.</p>
-              <p class="meta">Video &middot; Coming soon</p>
+            <img class="card__image" src="../assets/images/cover-3.jpg" alt="">
+            <div class="card__body">
+              <h3 class="card__title">Learning to Sign</h3>
+              <p class="card__text">A family learns sign language together.</p>
+              <p class="card__meta">Video &middot; Coming soon</p>
             </div>
           </article>
         </div>
@@ -87,12 +87,12 @@
   </main>
 
   <footer class="site-footer">
-    <p>StoryCast is a student project. <a href="../about.html">Read about our accessibility features</a>.</p>
+    <p class="site-footer__text">StoryCast is a student project. <a href="../about.html">Read about our accessibility features</a>.</p>
   </footer>
 
   <script>
     // show and hide the transcript
-    var button = document.querySelector(".toggle");
+    var button = document.querySelector(".transcript__toggle");
     var text = document.getElementById("transcript-text");
 
     button.addEventListener("click", function () {
